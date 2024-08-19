@@ -1,0 +1,85 @@
+local CoreGui = game:GetService("StarterGui")
+    CoreGui:SetCore("SendNotification", {
+        Title = "Welcome",
+        Text = "Добро пожаловать "..game.Players.LocalPlayer.DisplayName,
+        Icon = "rbxthumb://type=AvatarHeadShot&id="..game.Players.LocalPlayer.CharacterAppearanceId.."&w=150&h=150",
+        Duration = 10,
+        Callback = AllowRunServiceBind,
+    })
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tami4kaPlus/Tami4ka/main/Tami4kaLib"))()
+
+local Window = Library.CreateLib("defolx hub clickers and simulators.", "DarkTheme","rbxassetid://17326916234")
+
+local PlrTab = Window:NewTab("Main")
+local PlrSection = PlrTab:NewSection("Main")
+
+PlrSection:NewButton("Game: Aqua Racer (click this button)","Game", function()
+local TeleportService = game:GetService("TeleportService")
+local Place_ID = 15907416221
+
+TeleportService:Teleport(Place_ID, game.Players.LocalPlayer, game.PlaceId)
+end)
+
+PlrSection:NewButton("Aqua Racer (clicker and simulator)","Admin Commands", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/AquaRacer", true))()
+end)
+
+PlrSection:NewButton("Game: Pet Simulator X (click this button)","Game", function()
+local TeleportService = game:GetService("TeleportService")
+local Place_ID = 6284583030
+
+TeleportService:Teleport(Place_ID, game.Players.LocalPlayer, game.PlaceId)
+end)
+
+PlrSection:NewButton("Pet Simulator X","Admin Commands", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/rbIxscriptsnet/unfair/main/rblxhub.lua'),true))()
+end)
+
+PlrSection:NewButton("Game: Pet Simulator 99 (click this button)","Game", function()
+local TeleportService = game:GetService("TeleportService")
+local Place_ID = 8737899170
+
+TeleportService:Teleport(Place_ID, game.Players.LocalPlayer, game.PlaceId)
+end)
+
+PlrSection:NewButton("Pet Simulator 99", "Game",
+function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/PetSimulator99/main/redz9999.lua"))()
+end)
+
+PlrSection:NewButton("Game: Race Clicker (click this button)","Game", function()
+local TeleportService = game:GetService("TeleportService")
+local Place_ID = 9285238704
+
+TeleportService:Teleport(Place_ID, game.Players.LocalPlayer, game.PlaceId)
+end)
+
+PlrSection:NewButton("Race Clicker", "Game",
+function() 
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Saaakai/Random-Roblox-Script/main/Race%20Clicker')))()
+end)
+
+PlrSection:NewButton("Game: Rebirth Champions X (click this button)","Game", function()
+local TeleportService = game:GetService("TeleportService")
+local Place_ID = 8540346411
+
+TeleportService:Teleport(Place_ID, game.Players.LocalPlayer, game.PlaceId)
+end)
+
+PlrSection:NewButton("Rebirth Champions X", "Game",
+function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+end)
+
+PlrSection:NewButton("Game: Clicker Madness (click this button)","Game", function()
+local TeleportService = game:GetService("TeleportService")
+local Place_ID = 5490351219
+
+TeleportService:Teleport(Place_ID, game.Players.LocalPlayer, game.PlaceId)
+end)
+
+PlrSection:NewButton("Clicker Madness", "Game",
+function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BinaryDex/Scripts/main/Clicker_Madness.lua"))()
+end)
